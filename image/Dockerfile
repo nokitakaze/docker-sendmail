@@ -1,11 +1,11 @@
 FROM ubuntu:20.04
 
-# LABEL maintainer="Nokita Kaze <admin@kanaria.ru>"
+LABEL maintainer="Nokita Kaze <admin@kanaria.ru>"
 
 RUN apt-get update && \
-    apt-get install --yes --no-install-recommends sendmail nano
+    apt-get install --yes --no-install-recommends sendmail
 
-RUN apt-get install --yes --no-install-recommends net-tools mc telnet
+# RUN apt-get install --yes --no-install-recommends net-tools mc telnet
 
 RUN echo 'gmail.com smtp:[64.233.163.27]:[108.177.97.27]:[74.125.28.26]:[173.194.70.27]:[209.85.146.26]' >> '/etc/mail/mailertable' && \
     echo 'yandex.ru smtp:[77.88.21.89]:[93.158.134.89]:[213.180.193.89]:[213.180.204.89]:[87.250.250.89]' >> '/etc/mail/mailertable' && \
