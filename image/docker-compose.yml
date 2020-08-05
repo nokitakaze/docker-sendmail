@@ -1,0 +1,14 @@
+version: "3"
+services:
+    sendmail_itself:
+        container_name: ubuntu_sendmail
+        build: .
+        ports:
+            - "2025:25"
+        hostname: sendmail.example.com
+        volumes:
+            - "./sendmaildb:/var/run/sendmail"
+            - "./mails:/var/spool/mqueue"
+
+#volumes:
+#    sendmaildb:
