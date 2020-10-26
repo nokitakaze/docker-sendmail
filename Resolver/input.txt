@@ -1,15 +1,31 @@
+# biggest
 gmail.com
 yandex.ru
 yandex.com
-rambler.ru
-mail.ru
-bk.ru
-list.ru
-mail.ua
 yahoo.com
 hotmail.com
 outlook.com
 protonmail.com
+
+# mail.ru
+mail.ru
+bk.ru
+list.ru
+mail.ua
+
+# rambler
+rambler.ru
+autorambler.ru
+myrambler.ru
+rambler.ua
+ro.ru
+
+#
+qq.com
+lenta.ru
+vk.com
+facebook.com
+upived.com
 
 # 10 min mails
 kleogb.com
@@ -155,3 +171,53 @@ cocaine.ninja
 waifu.club
 rape.lol
 nuke.africa
+
+# temp-mail.org / 10minemail.com
+ptcji.com
+abbuzz.com
+uniteditcare.com
+ofdyn.com
+
+# 10minutemail.net
+eoopy.com
+bcaoo.com
+cuoly.com
+
+# minuteinbox.com
+ooroos.com
+
+# 20minutemail.com
+kjjit.eu
+20minutemail.it
+
+# crazymailing.com
+vmani.com
+wimsg.com
+
+# dropmail.me
+dropmail.me
+10mail.org
+yomail.info
+emltmp.com
+emlpro.com
+emlhub.com
+supere.ml
+zeroe.ml
+firste.ml
+laste.ml
+netmail.tk
+
+# lroid.com
+yevme.com
+
+# EU
+mail.bg
+mail.be
+postnl.nl
+mts.rs
+mail.ee
+
+#
+qip.ru
+jabber.ru
+icq.com
