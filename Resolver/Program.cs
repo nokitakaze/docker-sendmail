@@ -139,24 +139,22 @@ namespace Resolver
                 DnsResourceRecord soaRaw;
                 if (rfcRestriction)
                 {
+                    result = await DNSRequest(lookup, mxDomain, QueryType.AAAA);
+                    var ip_aaaa = result
+                        .Answers
+                        .OfType<AaaaRecord>()
+                        .Select(t => t.Address.ToString());
+
                     result = await DNSRequest(lookup, mxDomain, QueryType.A);
-                    var a1 = result
+                    var ip_a = result
                         .Answers
                         .OfType<ARecord>()
                         .Select(t => t.Address.ToString())
-                        .ToList();
+                        .Concat(ip_aaaa);
 
-                    result = await DNSRequest(lookup, mxDomain, QueryType.AAAA);
-                    var a2 = result
-                        .Answers
-                        .OfType<AaaaRecord>()
-                        .Select(t => t.Address.ToString())
-                        .ToArray();
-                    a1.AddRange(a2);
-
-                    if (a1.Any())
+                    if (ip_a.Any())
                     {
-                        allIps.AddRange(a1);
+                        allIps.AddRange(ip_a);
                         continue;
                     }
 
