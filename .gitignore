@@ -1,6 +1,6 @@
 /Resolver/bin
 /Resolver/obj
 
-/image/sendmaildb
-/image/mails
-/image/mailertable-patch.txt
+/sendmaildb
+/mails
+/mailertable-patch.txt
