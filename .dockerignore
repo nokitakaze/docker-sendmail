@@ -1,0 +1,6 @@
+.idea
+*.DotSettings.user
+README.md
+
+Resolver/bin
+Resolver/obj

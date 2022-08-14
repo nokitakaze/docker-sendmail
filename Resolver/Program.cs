@@ -66,9 +66,10 @@ internal static class Program
                 );
             })
             .Where(t => t != null)
-            .Aggregate("", (a, b) => a + " && \\\n" + b);
+            .Cast<string>()
+            .ToArray();
 
-        await File.WriteAllTextAsync(outputFilename, lines);
+        await File.WriteAllLinesAsync(outputFilename, lines);
     }
 
     private static readonly SemaphoreSlim mutex = new SemaphoreSlim(5, 5);
