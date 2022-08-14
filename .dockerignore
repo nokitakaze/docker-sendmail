@@ -1,6 +1,7 @@
 .idea
 *.DotSettings.user
 README.md
+LICENSE
 
 Resolver/bin
 Resolver/obj
